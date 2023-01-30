@@ -1,6 +1,6 @@
-import { Hero } from './hero';
+import { HeroInterface } from './heroInterface';
 
-export const heroesData: Hero[] = [
+export const heroesData: HeroInterface[] = [
   { id: 12, name: 'Dr. Nice' },
   { id: 13, name: 'Bombasto' },
   { id: 14, name: 'Celeritas' },

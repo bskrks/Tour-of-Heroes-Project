@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Hero } from '../hero';
+import { HeroInterface } from '../heroInterface';
 import { heroesData } from '../mock-heroes';
 
 @Component({
@@ -11,9 +11,9 @@ import { heroesData } from '../mock-heroes';
 export class HeroesComponent {
 
   heroes = heroesData;  // for binding mock array
-  selectedHero?: Hero;
+  selectedHero?: HeroInterface;
 
-  onSelect(hero: Hero): void {
+  onSelect(hero: HeroInterface): void {
     this.selectedHero = hero;
   }
 }
